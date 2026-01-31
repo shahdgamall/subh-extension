@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Subh",
+  "description": "A calm tasbih extension for moments of remembrance.",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+   "1": "assets/icons/menu-hamburger-svgrepo-com.svg"
+  }
+}

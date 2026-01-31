@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Lateef:200,300,regular,500,600,700,800);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 320px;
+  height: 420px;
+  font-family: "Lateef", system-ui, sans-serif;
+}
+
