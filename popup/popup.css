@@ -1,4 +1,48 @@
-@import url(https://fonts.googleapis.com/css?family=Lateef:200,300,regular,500,600,700,800);
+@font-face {
+  font-family: "Lyon Display";
+  src: url("../assets/fonts/COMM\ -\ Lyon\ Arabic\ Display\ Black.otf")
+    format("opentype");
+  font-display: swap; /* Helps control behavior while the font loads */
+}
+
+@font-face {
+  font-family: "Lyon Text";
+  src: url("../assets/fonts/COMM\ -\ Lyon\ Arabic\ Text\ Bold.otf")
+    format("opentype");
+}
+
+:root {
+  /*===============*/
+  /*primitive tokens */
+  /*===============*/
+
+  --white: #ffffff;
+  --black: #000;
+  --white-200: hsla(0, 0%, 100%, 0.685);
+
+  --gray-200: #e6e6e6;
+  --gray-500: hsla(0, 0%, 30%, 0.438);
+  --gray-700: hsla(0, 0%, 22%, 0.829);
+  --gray-900: #121212;
+
+  --bg-clr: var(--gray-200);
+  --text-main-clr: var(--gray-900);
+  --bg-blur: var(--gray-500);
+
+  --menu-clr: var(--white-200);
+  --text-menu-selected: var(--black);
+}
+
+/*===============*/
+/* Dark mode */
+/*===============*/
+[data-theme="dark"] {
+  --bg-clr: var(--gray-900);
+  --text-main-clr: var(--gray-200);
+  --bg-blur: var(--gray-700);
+  --menu-clr: var(--gray-700);
+  --text-menu-selected: var(--white);
+}
 
 * {
   box-sizing: border-box;
@@ -6,9 +50,32 @@
   padding: 0;
 }
 
+.flex {
+  display: flex;
+}
+
 body {
   width: 320px;
   height: 420px;
-  font-family: "Lateef", system-ui, sans-serif;
+  margin: 12px;
+
+  font-family: "Lyon Text", system-ui, sans-serif;
+  background-color: var(--bg-clr);
+  color: var(--text-main-clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  gap: 14px;
+  font-size: 20px;
 }
 
+h1 {
+  font-size: 36px;
+  font-family: "Lyon Display", system-ui, sans-serif;
+}
+
+.nav {
+ justify-content: space-between;
+  align-items: center;
+}
