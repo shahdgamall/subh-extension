@@ -224,7 +224,11 @@ p {
   direction: ltr;
   text-align: right;
 }
+
+
+/* ========================== */
 /* Menu Overlay */
+/* ============================== */
 .menu-overlay {
   display: none;
   position: fixed;
@@ -255,7 +259,7 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  width: 260px;
+  width: 210px;
   height: 100%;
   background-color: var(--bg-clr);
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
@@ -263,6 +267,11 @@ p {
   flex-direction: column;
   padding: 20px 0;
   overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.menu-container::-webkit-scrollbar {
+  display: none;
 }
 
 .menu-close-btn {
