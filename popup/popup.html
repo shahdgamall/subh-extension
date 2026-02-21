@@ -46,86 +46,109 @@
             /></svg
         ></a>
         <a href="" id="light-mode-btn">
+          <!-- Moon icon (shown in light mode) -->
           <svg
+            id="moon-icon"
+            class="theme-icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
           >
-            <g clip-path="url(#clip0_31_96)">
+            <path
+              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"
+              stroke="var(--text-main-clr)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+          </svg>
+          <!-- Sun icon (shown in dark mode) -->
+          <svg
+            id="sun-icon"
+            class="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_sun)">
               <path
                 d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M12 1V3"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M12 21V23"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M4.21997 4.22L5.63997 5.64"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M18.3601 18.36L19.7801 19.78"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M1 12H3"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M21 12H23"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M4.21997 19.78L5.63997 18.36"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
                 d="M18.3601 5.64L19.7801 4.22"
-                stroke="black"
+                stroke="var(--text-main-clr)"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
             </g>
             <defs>
-              <clipPath id="clip0_31_96">
+              <clipPath id="clip0_sun">
                 <rect width="24" height="24" fill="white" />
               </clipPath>
             </defs>
           </svg>
         </a>
       </div>
+
       <h1>سبِّح</h1>
       <div class="sebha">
         <img src="../assets/icons/sebha-img.png" alt="Sebha" />
@@ -148,6 +171,23 @@
       <p class="dhikr-text" id="dhikr-text">
         اللهم صل وسلم وبارك على سيدنا محمد
       </p>
+    </div>
+
+  
+    <div id="menu-overlay" class="menu-overlay">
+      <div class="menu-container">
+        <button class="menu-close-btn" id="menu-close-btn">&times;</button>
+        <ul class="menu-list">
+          <li class="menu-item" data-zekr="سبحان الله وبحمده">سبحان الله وبحمده</li>
+          <li class="menu-item" data-zekr="الحمد لله">الحمد لله</li>
+          <li class="menu-item" data-zekr="لا إله إلا الله">لا إله إلا الله</li>
+          <li class="menu-item" data-zekr="الله اكبر">الله اكبر</li>
+          <li class="menu-item" data-zekr="لا حول ولا قوة إلا بالله">لا حول ولا قوة إلا بالله</li>
+          <li class="menu-item" data-zekr="أستغفر الله">أستغفر الله</li>
+          <li class="menu-item" data-zekr="لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير">لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير</li>
+          <li class="menu-item" data-zekr="اللهم صل وسلم وبارك على سيدنا محمد">اللهم صل وسلم وبارك على سيدنا محمد</li>
+        </ul>
+      </div>
     </div>
 
     <script src="popup.js"></script>
