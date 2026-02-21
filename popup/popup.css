@@ -11,6 +11,68 @@
     format("opentype");
 }
 
+@font-face {
+  font-family: "digital nums";
+  src: url("../assets/fonts/DigitalNumbers-Regular.ttf") format("truetype");
+}
+
+/*----------------------------- */
+/* RESET */
+/*----------------------------- */
+
+/* Box sizing */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+picture,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 :root {
   /*===============*/
   /*primitive tokens */
@@ -57,16 +119,11 @@
 body {
   width: 320px;
   height: 420px;
-  margin: 12px;
 
+  line-height: 1.5rem;
   font-family: "Lyon Text", system-ui, sans-serif;
   background-color: var(--bg-clr);
   color: var(--text-main-clr);
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
-  gap: 14px;
   font-size: 20px;
 }
 
@@ -76,6 +133,77 @@ h1 {
 }
 
 .nav {
- justify-content: space-between;
+  width: 100%;
   align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  padding: 5px;
+}
+
+.wrapper {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 0.85rem;
+}
+
+p {
+  text-align: center;
+  max-width: 260px;
+  text-wrap: balance;
+}
+
+.sebha {
+  position: relative;
+}
+/* =============================== */
+/*  press animation */
+/* ================================== */
+#counter-btn-img{
+  transition: transform 170ms ease;
+  display: block;
+}
+#counter-btn-img.pressed {
+  transform: translateY(3px);
+}
+#reset-btn-img {
+  transition: transform 170ms ease;
+  display: block;
+}
+#reset-btn-img.pressed {
+  transform: translateY(3px);
+}
+
+
+
+#reset-btn {
+  position: absolute;
+  right: 38px;
+  bottom: 65px;
+}
+
+#counter-btn {
+  position: absolute;
+  left: 65.5px;
+  bottom: 30px;
+}
+
+.counter-text * {
+  color: rgba(0, 0, 0, 0.11);
+  font-family: "digital nums";
+  font-size: 32px;
+  position: absolute;
+  right: 35px;
+  top: 65px;
+ 
+}
+
+#counter-number {
+  color: #000;
+   direction: ltr;
+  text-align: right;
 }
