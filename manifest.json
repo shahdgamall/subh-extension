@@ -1,12 +1,23 @@
 {
   "manifest_version": 3,
-  "name": "Subh",
-  "description": "A calm tasbih extension for moments of remembrance.",
+  "name": "Subh - Islamic Tasbih Counter",
+  "short_name": "Subh",
+  "description": "A peaceful and intuitive tasbih counter for Islamic remembrance (Dhikr). Track your daily remembrances with separate counters for each zekr, dark mode support, and persistent storage.",
   "version": "1.0.0",
-  "action": {
-    "default_popup": "popup/popup.html"
-  },
+  "author": "Shahd Gamall",
   "icons": {
-   "1": "assets/icons/menu-hamburger-svgrepo-com.svg"
-  }
+    "16": "assets/icons/sebha-icon.png",
+    "48": "assets/icons/sebha-icon.png",
+    "128": "assets/icons/sebha-icon.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Subh - Tasbih Counter"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "homepage_url": "https://github.com/shahdgamall/subh-extension",
+  "offline_enabled": true,
+  "minimum_chrome_version": "88"
 }
